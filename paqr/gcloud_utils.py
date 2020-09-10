@@ -13,4 +13,4 @@ def gcloud_deploy(container_id: str, config: dict, allow_unauthenticated: bool =
     if allow_unauthenticated:
         args.append("--allow-unauthenticated")
     logging.info("Deploying container {} to Cloud Run".format(container_id))
-    subprocess.call(args)
+    subprocess.run(args, check=True)
