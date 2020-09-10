@@ -12,7 +12,7 @@ def main(args):
     config = validate_paq(args.paq_dir)
     if not args.skip_build:
         docker_build(config['name'], args.paq_dir)
-    docker_run(config['name'], port=args.port)
+    docker_run(config['name'], port=args.p)
 
 
 if __name__ == '__main__':
@@ -20,7 +20,7 @@ if __name__ == '__main__':
     parser.add_argument(
         'paq_dir', help="Path to the base of the paq. Directory must contain a paq.yml file")
     parser.add_argument(
-        '--port', help="The port mapping from docker container to host", default="8080:8080")
+        '--p', help="The port mapping from docker container to host", default="8080:8080")
     parser.add_argument(
         '--skip_build', help="""Will skip the docker build step and just try and run the container. 
         This will fail if the container has not been built before or if it is already running on the same port""", action='store_true')
