@@ -4,7 +4,7 @@ Helper library for packing ML apps to be published on Qrithm
 
 ## Installation
 
-Add `git+https://github.com/qrithm/paqr@master` to the requirements.txt file of your paq.
+Add `git+https://github.com/qrithm/paqr.git` to the requirements.txt file of your paq.
 
 In the future we may cut releases, but for now this is based off master.
 
