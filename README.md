@@ -12,6 +12,14 @@ Install your requirements file so that `paqr` can be run from the shell
 
 ## Usage
 
+### Initialize your paq
+
+Run:
+
+`python -m paqr.create . <your-paq-name>
+
+to initialize a paq with your name from the starter-paq `https://github.com/qrithm/starter-paq`
+
 ### Implement your predictor
 
 Implement your Predictor as follow:
