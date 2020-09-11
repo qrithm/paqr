@@ -12,9 +12,7 @@ Creates a new paq from the starter-paq template and configures it with the user-
 
 def create_paq(base_dir: str, paq_name: str):
     os.chdir(base_dir)
-    args = ["git", "clone", "https://github.com/qrithm/starter-paq.git"]
-    subprocess.run(args, check=True)
-    args = ["mv", "starter-paq", paq_name]
+    args = ["git", "clone", "https://github.com/qrithm/starter-paq.git", paq_name]
     subprocess.run(args, check=True)
     paq_root = os.path.join(base_dir, paq_name)
     os.chdir(paq_root)
