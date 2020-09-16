@@ -1,2 +1,3 @@
 name: <sample-paq-name>
 memory: 2048M
+cpu: "1"
