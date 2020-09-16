@@ -12,7 +12,7 @@ Run `pip install git+https://github.com/qrithm/paqr.git`
 
 Run:
 
-`python -m paqr.create . <your-paq-name>
+`python -m paqr.create . <your-paq-name>`
 
 to initialize a paq with your name from the starter-paq `https://github.com/qrithm/starter-paq`
 
