@@ -4,7 +4,7 @@ import os
 
 # Package Metadata
 NAME = 'paqr'
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 
 
 def required_packages():
@@ -13,6 +13,7 @@ def required_packages():
         'fastapi == 0.60.1',
         'python-multipart == 0.0.5',
         'requests == 2.24.0',
+        'PyYAML == 5.3.1'
     ]
     return PACKAGES
 
